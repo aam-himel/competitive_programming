@@ -1,0 +1,4 @@
+
+# Ignoring build files
+*.o
+*.exe
