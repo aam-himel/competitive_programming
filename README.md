@@ -2,4 +2,4 @@
 
 ## Platforms
 
-(CodeForces)[https://codeforces.com/]
+(CodeForces) [https://codeforces.com/]
