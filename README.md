@@ -1,9 +1,9 @@
 # Competitive Programming with c++
 
-## Platforms
+## Online Judges Profiles
 
-CodeForces : [CodeForces](https://codeforces.com/problemset)
+1. LeetCode Profile Link is :arrow_right: [Here](https://leetcode.com/aamHimel/) 
+2. CodeChef Profile Link is :arrow_right: [Here](https://www.codechef.com/users/aam_himel)
+3. CodeForces Profile Link is :arrow_right: [Here](https://codeforces.com/profile/aam_Himel)
 
 
-## Resources
-1. List of Algorithms by categories, in the field of competitive programming : [Here is the link](https://cp-algorithms.com/)
