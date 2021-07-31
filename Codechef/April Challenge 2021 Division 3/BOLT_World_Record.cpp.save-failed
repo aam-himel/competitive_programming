@@ -1,0 +1,17 @@
+/*
+    Author : aamHimel
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    float x = 34.33222;
+    float value = (int)(x * 100 + .5);
+    cout << (float)x/100;
+    return 0;
+}
