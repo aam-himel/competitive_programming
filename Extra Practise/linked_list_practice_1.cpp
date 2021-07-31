@@ -1,50 +1,70 @@
+#include<bits/stdc++.h>
 
-/*
-    Author : aamHimel
-*/
-
-#include <bits/stdc++.h>
 using namespace std;
 
-struct node {
+struct node
+{
     int value;
-    struct node *next;
+    node *next;
 };
 
-class linkedList(){
+class linked_list
+{
     node *head, *tail;
-
-    linkedList(){
+public:
+    linked_list()
+    {
         head = NULL;
         tail = NULL;
     }
 
-    void addNode(int value){
-        node *temp = new node;
+    void addNode(int value)
+    {
+        node *temp = new node();
         temp->value = value;
         temp->next = NULL;
+
+        if(head == NULL)
+        {
+            head = temp;
+            tail = temp;
+        }
+        else
+        {
+            tail->next = temp;
+            tail = tail->next;
+
+        }
     }
-    if(head == NULL){
-        head = temp;
-        tail = temp;
-    }else {
-        head = temp;
-        tail = tail->next;
+
+    void printNode()
+    {
+        node *temp;
+        temp = head;
+
+        while(temp != NULL)
+        {
+            cout << temp->value << endl;
+            temp = temp->next;
+        }
     }
 };
 
+
+
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    linked_list l1, l2;
+    l1.addNode(2);
+    l1.addNode(3);
+    l1.addNode(4);
+    cout << "--------First list--------\n\n";
+    l1.printNode();
+    cout << "--------Second list--------\n\n";
+    l2.addNode(2);
+    l2.addNode(3);
+    l2.addNode(4);
 
-    linkedList ls;
-    ls.addNode(3);
-    ls.addNode(32);
-    ls.addNode(4);
-    ls.addNode(6);
-
-
-
+    l2.printNode();
     return 0;
 }
